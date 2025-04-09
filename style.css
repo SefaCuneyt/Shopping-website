@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: green;
+}
+
+#login-form,
+#product-list,
+#shopping-cart {
+    margin-bottom: 20px;
+    background-color: gray;
+    color: yellow;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: left;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    width: 250px;
+    vertical-align: top;
+}
+
+#total-price {
+    font-weight: bold;
+    font-size: 18px;
+}

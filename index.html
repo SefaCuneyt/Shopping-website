@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> SCA alışveriş şirketi</h1>
+
+    <div id="login-form">
+        <h2>Üye Girişi</h2>
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" id="username" placeholder="Kullanıcı adınızı girin">
+        <button onclick="login()">Giriş Yap</button>
+    </div>
+
+    <div id="product-list">
+        <h2 style="padding-top:15px">Ürünler</h2>
+
+        <div class="product" id="product1">
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/522352/44/mod01/fnd/TUR/w/1000/h/1000/fmt/png" width="250px">
+            <p>Puma T-shirt - Fiyat: 450₺</p>
+            <button onclick="addToCart('product1', 450)" style="background-color:orange">Sepete Ekle</button>
+        </div>
+
+        <div class="product" id="product2">
+            <img src="https://productimages.hepsiburada.net/s/401/375-500/110000426568114.jpg" width="190px">
+            <p>Nike T-shirt - Fiyat: 300₺</p>
+            <button onclick="addToCart('product2', 300)" style="background-color:orange">Sepete Ekle</button>
+        </div>
+
+        <div class="product" id="product3">
+            <img src="https://cdn.myikas.com/images/950cd940-5e0b-48bf-8d21-2cc23846d8e0/3508f36e-ea7f-4060-abd4-a30829cf1db7/image_1080.jpg" width="250px">
+            <p>Nike T-shirt - Fiyat: 385₺</p>
+            <button onclick="addToCart('product3', 385)" style="background-color:orange">Sepete Ekle</button>
+        </div>
+
+        <div class="product" id="product4">
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/47c02ced-c0fb-44d2-952d-c12a2e81ab38/atl%C3%A9tico-madrid-swoosh-ti%C5%9F%C3%B6rt%C3%BC-cCV1h0.png" width="200px">
+            <p>Nike T-shirt - Fiyat: 400₺</p>
+            <button onclick="addToCart('product4', 400)" style="background-color:orange">Sepete Ekle</button>
+        </div>
+
+        <div class="product" id="product5">
+            <img src="https://productimages.hepsiburada.net/s/374/375-500/110000391821302.jpg" width="190px">
+            <p>Puma T-shirt - Fiyat: 455₺</p>
+            <button onclick="addToCart('product5', 455)" style="background-color:orange">Sepete Ekle</button>
+        </div>
+
+        <div class="product" id="product6">
+            <img src="https://aad216.a-cdn.akinoncloud.com/products/2023/06/22/12965/11b77e07-c9d5-4340-8522-4fc421284cb7_size610x610_cropCenter.jpg" width="250px">
+            <p>Puma T-shirt - Fiyat: 425₺</p>
+            <button onclick="addToCart('product6', 425)" style="background-color:orange">Sepete Ekle</button>
+        </div>
+    </div>
+
+    <div id="shopping-cart">
+        <h2 style="color:orange">Sepet</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Toplam Fiyat: 0₺</p>
+        <button onclick="clearCart()" style="background-color:red">Sepeti Temizle</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
